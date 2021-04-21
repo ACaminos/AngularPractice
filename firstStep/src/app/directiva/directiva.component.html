@@ -1,0 +1,10 @@
+<div *ngFor="let nombre of nombres" class="datos">
+    <p>hola mi nombre es: {{ nombre }} </p>
+</div>
+
+<div *ngFor="let producto of productos" class="datos">
+    <p>El producto es: {{producto.nombre}}</p>
+    <p>El stock es : {{producto.stock}} </p>
+    <p>Su fabricante es : {{producto.fabricante}} </p>
+    <p>Su fecha de vencimiento es : {{producto.fechaVence}} </p>
+</div>
