@@ -1,0 +1,12 @@
+<div class="tab" [ngSwitch]="pestana">
+    <button (click)="cambiarPestana('Perfil')">Perfil</button>
+    <button (click)="cambiarPestana('Puntos')">Puntos</button>
+    <button (click)="cambiarPestana('Info')">Info</button>
+
+    <div class="tabContenido">
+        <p *ngSwitchCase="'Perfil'">Perfil del Usuario</p>
+        <p *ngSwitchCase="'Puntos'">Estos son los puntos</p>
+        <p *ngSwitchCase="'Info'">Esta es la info</p>
+        <p *ngSwitchDefault>Seleccione una pestana</p>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+.separador{
+    border-top: 2px solid black;
+}
+p.titulo{
+    text-align: center;
+    font-size: 18pt;
+}
