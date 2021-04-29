@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgClasesComponent implements OnInit {
 
+  mostrarArial: Boolean = true
+
+  mostrarTimes: Boolean = true
+
+  mostrarSans: Boolean = true
+
+  opcionUno:Boolean = false
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  alternarUno(){
+    this.opcionUno = !this.opcionUno;
+  }
 }
